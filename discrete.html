@@ -1,0 +1,88 @@
+<head>
+  <title>Discrete Math Project</title>
+</head>
+
+<body>
+  <h1>Discrete Mathematics Spring 2015 Project</h1>
+  <h2>By Dylan Sanders</h2>
+
+  {{> logExp}}
+{{> sets}}
+</body>
+
+<template name="logExp">
+
+    <h3>Truth Table</h3>
+    <form>
+        <input type="text"  name="expression" placeholder="eg (p OR q) AND r">
+
+        <input type="submit" value="Print Truth Table">
+    </form>
+    {{#if display}}
+    <table style="width: 50%;  text-align: center">
+        <tr>
+            <td style="border-bottom: double; font-weight: bold">p</td>
+            <td style="border-bottom: double; font-weight: bold">q</td>
+            <td style="border-bottom: double; font-weight: bold">r</td>
+            <td style="border-bottom: double; font-weight: bold">{{expression}}</td>
+        </tr>
+
+
+       {{> logResult}}
+
+
+    </table>
+    {{/if}}
+</template>
+
+<template name="logResult">
+    <tr>
+        <td>{{p.[0]}}</td>
+        <td>{{q.[0]}}</td>
+        <td>{{r.[0]}}</td>
+        <td>{{result.[0]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[1]}}</td>
+        <td>{{q.[1]}}</td>
+        <td>{{r.[1]}}</td>
+        <td>{{result.[1]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[2]}}</td>
+        <td>{{q.[2]}}</td>
+        <td>{{r.[2]}}</td>
+        <td>{{result.[2]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[3]}}</td>
+        <td>{{q.[3]}}</td>
+        <td>{{r.[3]}}</td>
+        <td>{{result.[3]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[4]}}</td>
+        <td>{{q.[4]}}</td>
+        <td>{{r.[4]}}</td>
+        <td>{{result.[4]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[5]}}</td>
+        <td>{{q.[5]}}</td>
+        <td>{{r.[5]}}</td>
+        <td>{{result.[5]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[6]}}</td>
+        <td>{{q.[6]}}</td>
+        <td>{{r.[6]}}</td>
+        <td>{{result.[6]}}</td>
+    </tr>
+    <tr>
+        <td>{{p.[7]}}</td>
+        <td>{{q.[7]}}</td>
+        <td>{{r.[7]}}</td>
+        <td>{{result.[7]}}</td>
+    </tr>
+
+</template>

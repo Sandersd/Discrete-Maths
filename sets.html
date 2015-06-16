@@ -1,0 +1,14 @@
+<template name="sets">
+
+    <form>
+        A<input type="text"  name="setA" placeholder="eg 1,2,3,4,5">
+        B<input type="text"  name="setB" placeholder="eg 4,5,6">
+        <input type="submit" value="Show relationships">
+    </form>
+    <div class="container">
+        {{#if ready}}
+            {{union}}
+        {{/if}}
+    </div>
+
+</template>
